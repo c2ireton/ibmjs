@@ -1,13 +1,14 @@
-function submitFeedback() {
-    const username = document.getElementById('name').value;
-    const age = document.getElementById('age').value;
-    const email = document.getElementById('email').value;
-    const job = document.getElementById('job').value;
-    const designation = document.getElementById('designation').value;
-    const productType = document.getElementById('productType').value;
-    const feedback = document.getElementById('feedbackText').value;
+onst username = document.getElementById('name').value;
+const age = document.getElementById('age').value;
+const email = document.getElementById('email').value;
+const job = document.getElementById('job').value;
+const designation = document.getElementById('designation').value;
+const productType = document.getElementById('productType').value;
+const feedback = document.getElementById('feedbackText').value;
 
-    const submitButton=document.getElementById('submitBtn');
+const submitButton=document.getElementById('submitBtn');
+
+function submitFeedback() {
 
     document.getElementById('userName').innerHTML = username;
     document.getElementById('userAge').innerHTML = age;
@@ -19,10 +20,12 @@ function submitFeedback() {
 
     document.getElementById('userInfo').style.display = 'block';
 
+    alert('Thank you for your valuable Feedback')
+
 }
 
 submitButton.onclick = submitFeedback;
-alert('Thank you for your valuable Feedback')
+
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {

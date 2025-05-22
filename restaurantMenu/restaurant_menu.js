@@ -1,9 +1,9 @@
-const breakfestMenu = ['Pancakes', 'Eggs Benedict', 'Oatmeal', 'Frittata'];
+const breakfastMenu = ['Pancakes', 'Eggs Benedict', 'Oatmeal', 'Frittata'];
 const mainCourseMenu = ['Steak', 'Pasta', 'Burger', 'Salmon'];
 const dessertMenu = ['Cake', 'Ice Cream', 'Pudding', 'Fruit Salad'];
 
-const breakfestMenuHTML = breakfestMenu.map((Item, index) => `<p>Item ${index + 1}: ${Item}</p>`).join('');
-    document.getElementById('breakfestMenuItems').innerHTML = breakfestMenuHTML;
+const breakfastMenuHTML = breakfastMenu.map((Item, index) => `<p>Item ${index + 1}: ${Item}</p>`).join('');
+    document.getElementById('breakfastMenuItems').innerHTML = breakfastMenuHTML;
 
   let mainCourseItem = '';
 mainCourseMenu.forEach((item, index) => {

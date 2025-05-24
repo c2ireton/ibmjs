@@ -1,7 +1,7 @@
 let testText = "The quick brown fox jumps over the lazy dog.";
 let startTime, endTime;
 
-function startTime() {
+function startTest() {
     // Set the test text
 document.getElementById("inputText").value = testText;
 
